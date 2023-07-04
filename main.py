@@ -8,11 +8,26 @@ theMessage ='''
 
     only tell what do you like and after put the numbers 
 
+    and if you want to do the operation with a way more easy put 5
+
 '''
 
 print(theMessage)
 
 Operation = input("put the operation right here: ")
+
+
+def operations (operation):
+     if operation == "5":
+          OperationUser = input("put right here your operation")
+          convert = OperationUser.replace(" ", "")
+          convert = OperationUser.split()
+          print(convert)
+
+
+
+
+
 
 print("now tell me the numbers")
 Number1 = int(input("first Number: "))
@@ -38,6 +53,8 @@ def multiplicattion(number1,number2,operation):
           result = number1 * number2
           print(result)
 
+
+operations(Operation)
 
 multiplicattion(Number1,Number2,Operation)
 substraction(Number1,Number2,Operation)
